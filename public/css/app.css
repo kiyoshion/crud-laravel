@@ -1,0 +1,33 @@
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+}
+
+.header a {
+  padding: 1rem;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 5rem auto;
+}
+
+.footer__inner {
+  width: 90%;
+  margin: 0 auto;
+}
+
