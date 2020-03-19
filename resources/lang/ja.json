@@ -1,0 +1,14 @@
+{
+    "Register": "登録",
+    "Login": "ログイン",
+    "Logout": "ログアウト",
+    "MyPage": "マイページ",
+    "Dashboad": "マイページ",
+    "Name": "名前",
+    "E-Mail Address": "メールアドレス",
+    "Password": "パスワード",
+    "Confirm Password": "パスワード確認",
+    "Remember Me": "ログイン情報を保存",
+    "Forgot Your Password?": "パスワードをお忘れですか？",
+    "You are logged in!": "ログイン済みです。"
+}

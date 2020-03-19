@@ -17,7 +17,11 @@
                     <a href="/">LOGO</a>
                 </div>
                 <div class="header__menu">
-                    <a href="/post">POST</a>
+                    <ul class="header__menu-list">
+                        <li class="header__menu-item"><a href="/post">投稿</a></li>
+                        <li class="header__menu-item"><a href="/register">新規登録</a></li>
+                        <li class="header__menu-item"><a href="/login">ログイン</a></li>
+                    </ul>
                 </div>
             </div>
         </header>

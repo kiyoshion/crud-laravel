@@ -3,10 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
 use App\Post;
+use App\Comment;
+use App\User;
 
-class PostController extends Controller
+class CommentsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,9 +16,7 @@ class PostController extends Controller
      */
     public function index()
     {
-        $posts = Post::all();
-
-        return view('post/index', compact('posts'));
+        //
     }
 
     /**
@@ -27,8 +26,7 @@ class PostController extends Controller
      */
     public function create()
     {
-        $post = new Post();
-        return view('post/create', compact('post'));
+        //
     }
 
     /**
@@ -39,13 +37,14 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        $post = new Post();
-        $post->title = $request->title;
-        $post->body = $request->body;
-        $post->user_id = 1;
-        $post->save();
+        $comment = new comment;
+        $comment->body = $request->body;
+        $comment->post_id = $request->post_id;
+        $comment->user_id = $request->user_id;
+        $comment->save();
 
-        return redirect('/post');
+        return redirect('posts/' . $request->post_id);
+
     }
 
     /**
@@ -67,9 +66,7 @@ class PostController extends Controller
      */
     public function edit($id)
     {
-        $post = Post::findOrFail($id);
-
-        return view('post/edit', compact('post'));
+        //
     }
 
     /**
@@ -81,13 +78,7 @@ class PostController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $post = Post::findOrFail($id);
-        $post->title = $request->title;
-        $post->body = $request->body;
-        $post->user_id = 1;
-        $post->save();
-
-        return redirect('/post');
+        //
     }
 
     /**
@@ -98,9 +89,6 @@ class PostController extends Controller
      */
     public function destroy($id)
     {
-        $post = Post::findOrFail($id);
-        $post->delete();
-
-        return redirect('/post');
+        //
     }
 }

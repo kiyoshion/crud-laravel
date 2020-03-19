@@ -1,0 +1,14 @@
+.footer {
+    background-color: $black;
+    color: $white;
+    font-size: .6rem;
+    text-align: center;
+    &__inner {
+        padding: 1rem 0;
+    }
+    a {
+        display: block;
+        color: $white;
+        padding: 1rem;
+    }
+}

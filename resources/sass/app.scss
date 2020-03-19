@@ -1,39 +1,15 @@
-$color__main: #333;
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
 
-a {
-    color: $color__main;
-    text-decoration: none;
-}
+// Variables
+@import 'variables';
 
-.header {
-    &__inner {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 90%;
-        margin: 0 auto;
-    }
-    &__logo {
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
 
-    }
-    &__menu {
-        display: flex;
-        align-items: center;
-    }
-    a {
-        padding: 1rem;
-    }
-}
-
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 5rem auto;
-}
-
-.footer {
-    &__inner {
-        width: 90%;
-        margin: 0 auto;
-    }
-}
+@import 'header';
+@import 'hero';
+@import 'footer';
+@import 'common';
+@import 'content';
+@import 'barba';
